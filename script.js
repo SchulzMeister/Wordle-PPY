@@ -10,15 +10,14 @@ let diccionario = [
 let palabra = getWord()
 let intentos = 6;
 
-/*//para mi posterior api *verificar 
-const endpoint = "api"
-fetch(endpoint).then("response") => {
-    Response.json().then((data)=> {
+const endpoint = "https://random-word-api.herokuapp.com/word?length=5"
+
+fetch(endpoint).then((response) => {
+    response.json().then((data) => {
         console.log(data[0])
         palabra = data[0].toUpperCase()
-    });
-}*/
-
+    })
+})
 function getWord(){
     
     let min = 0;
