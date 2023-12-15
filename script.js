@@ -84,7 +84,6 @@ function leerIntento(){
     return input.value.toUpperCase()
 }
 
-console.log(palabra)
 
 
 
